@@ -12,7 +12,7 @@ const tbody = document.querySelector('#rank tbody')
 
 async function getStats() {
   try {
-    const response = await fetch('/assets/stats.json')
+    const response = await fetch('assets/stats.json')
     const data = await response.json()
 
     return data
