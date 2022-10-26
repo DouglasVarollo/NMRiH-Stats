@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>NMRiH Stats - Sad Sinners</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <form class="my-2" onsubmit="event.preventDefault()">
+          <label class="form-label" for="name">Buscar por nome</label>
+
+          <input class="form-control" id="name" type="text" />
+        </form>
+      </div>
+
+      <div class="row">
+        <div class="mt-2">
+          <table class="table" id="rank">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th>Pontos</th>
+                <th>Kills</th>
+                <th>Mortes</th>
+              </tr>
+            </thead>
+
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="align-items-center d-flex gap-2 justify-content-center mb-2"
+        >
+          <button
+            class="btn btn-outline-primary"
+            id="first-page"
+            title="Ir para a primeira página"
+          >
+            <i class="bi bi-arrow-left-circle"></i>
+          </button>
+
+          <button
+            class="btn btn-outline-primary"
+            id="prev-page"
+            title="Ir para a página anterior"
+          >
+            <i class="bi bi-arrow-left-short"></i>
+          </button>
+
+          <span class="mx-2" id="describe">Página 0 de 0</span>
+
+          <button
+            class="btn btn-outline-primary"
+            id="next-page"
+            title="Ir para a próxima página"
+          >
+            <i class="bi bi-arrow-right-short"></i>
+          </button>
+
+          <button
+            class="btn btn-outline-primary"
+            id="last-page"
+            title="Ir para a última página"
+          >
+            <i class="bi bi-arrow-right-circle"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
+</html>
